@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="165dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="12dp"
+        map:layout_column="1"
+        map:layout_constraintBottom_toTopOf="@+id/placeNameText"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.697"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_row="4"
+        tools:context=".View.DetailsActivity" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="324dp"
+        android:layout_height="281dp"
+        android:src="@drawable/ic_launcher_background"
+        map:layout_column="1"
+        map:layout_constraintBottom_toTopOf="@+id/map"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.235"
+        map:layout_row="0" />
+
+    <TextView
+        android:id="@+id/artNameText"
+        android:layout_width="301dp"
+        android:layout_height="44dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        map:layout_column="0"
+        map:layout_constraintBottom_toTopOf="@+id/artistNameText"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.497"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/imageView2"
+        map:layout_constraintVertical_bias="0.265"
+        map:layout_row="2" />
+
+    <TextView
+        android:id="@+id/artistNameText"
+        android:layout_width="189dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        map:layout_column="0"
+        map:layout_constraintBottom_toTopOf="@+id/yearText"
+        map:layout_constraintEnd_toStartOf="@+id/map"
+        map:layout_constraintHorizontal_bias="0.533"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_row="3" />
+
+    <TextView
+        android:id="@+id/yearText"
+        android:layout_width="192dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="104dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        map:layout_column="0"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toStartOf="@+id/map"
+        map:layout_constraintHorizontal_bias="0.416"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_row="4" />
+
+    <TextView
+        android:id="@+id/placeNameText"
+        android:layout_width="186dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="32dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        map:layout_column="0"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.613"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_row="4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
