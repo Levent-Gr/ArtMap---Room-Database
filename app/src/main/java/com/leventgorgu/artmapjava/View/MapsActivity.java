@@ -70,7 +70,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        ArtPlaceDataBase dataBase = Room.databaseBuilder(getApplicationContext(),ArtPlaceDataBase.class,"ArtPlace").build();//-build demeyi unuttum.
+        ArtPlaceDataBase dataBase = Room.databaseBuilder(getApplicationContext(),ArtPlaceDataBase.class,"ArtPlace").build();
         artPlaceDao = dataBase.artPlaceDao();
 
         info = false;
