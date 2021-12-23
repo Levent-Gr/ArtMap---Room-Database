@@ -9,8 +9,8 @@ The purpose of this project is to record the location of users by photographing 
 - Used language Java
 - View Binding
 - Room Database
-- Rx Java
-- Recycler View
+- RxJava
+- RecyclerView
 
   
 ## Screenshots
