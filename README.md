@@ -2,6 +2,7 @@
 # ArtMap
 
 The purpose of this project is to record the location of users by photographing artistic objects in the places they visit.
+This project was taken from the AtilSamancioglu Udemy course.
 
 
 ## Libraries And Tools
